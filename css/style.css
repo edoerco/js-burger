@@ -4,3 +4,70 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* common */
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff5e2;
+}
+
+.container {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-color: #fdbb40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    height: calc(100vh - 250px);
+    width: 100%;
+    background-color: #fff;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #d33359;
+    color: white;
+}
+/* fine common */
+
+/* header */
+header h1 {
+    padding-left: 50px;
+    font-size: 40px;
+}
+
+.burger {
+    width: 200px;
+    height: 200px;
+}
+
+.burger img {
+    margin-left: 20px;
+}
+
+/* fine header */
+
+/* main */
+/* fine main */
+
+/* footer */
+/* fine footer */
+
+/* debug */
+.debug .container {
+    /* border: 1px solid black; */
+}
