@@ -34,13 +34,20 @@ main {
     height: calc(100vh - 250px);
     width: 100%;
     background-color: #fff;
+    padding: 50px;
 }
 
 footer {
     height: 100px;
     width: 100%;
     background-color: #d33359;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
+    font-size: 30px;
+    padding: 50px;
+    font-weight: 700;
 }
 /* fine common */
 
@@ -62,12 +69,94 @@ header h1 {
 /* fine header */
 
 /* main */
+#burgerName {
+    border: none;
+    font-size: 30px;
+}
+
+#burgerName:focus {
+    outline: none;
+}
+
+main p {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.ingredienti {
+    display: flex;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.items img {
+    width: 50px;
+}
+
+.items span {
+    margin: 0 15px;
+    font-weight: 400;
+}
+
+.items .ingrediente {
+    position: relative;
+    appearance: none;
+    background-color: #d33359;
+    width: 15px;
+    height: 15px;
+}
+
+.items .ingrediente:checked::after {
+    position: absolute;
+    top: -5px;
+    left: -2px;
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: '\f00c';
+}
+
+.items span:last-child {
+    color: #d33359;
+}
+
+.col-dx {
+    margin-left: 100px;
+}
+
+.sconto {
+    margin-top: 40px;
+}
+
+.sconto input {
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff5e2;
+    padding: 5px;
+    width: 70%;
+}
+
+.btn-sconto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-sconto button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fdbb40;
+    font-weight: bold;
+    font-size: 20px;
+}
 /* fine main */
 
 /* footer */
 /* fine footer */
 
-/* debug */
-.debug .container {
-    /* border: 1px solid black; */
-}
